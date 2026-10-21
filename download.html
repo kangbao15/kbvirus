@@ -1,35 +1,352 @@
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b0b12">
-<title>Download | KBVirus</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#100b1c">
+<title>KBVirus | Downloads</title>
+
 <style>
-:root{--bg:#0b0b12;--text:#f4f3ff;--muted:#a3a2b8;--purple:#a78bfa;--line:#29283a;--red:#fb7185}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif;min-height:100vh;overflow-x:hidden}.glow{position:fixed;width:420px;height:420px;border-radius:50%;filter:blur(110px);opacity:.16;pointer-events:none;z-index:-1}.a{background:#7c3aed;top:-170px;left:-120px}.b{background:#db2777;right:-180px;top:340px}
-header{height:78px;max-width:1120px;margin:auto;padding:0 26px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff0d}.brand{display:flex;gap:10px;align-items:center;text-decoration:none;color:var(--text);font-weight:900;font-size:20px}.mark{display:grid;place-items:center;width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,#a78bfa,#ec4899);color:#100d1b}.accent{color:var(--purple)}nav{display:flex;gap:24px}nav a,.back{color:var(--muted);text-decoration:none;font-size:13px;font-weight:700}nav a:hover,nav a.active,.back:hover{color:white}
-main{max-width:880px;margin:auto;padding:76px 26px 60px}.eyebrow{display:flex;align-items:center;gap:10px;color:#c4b5fd;font:700 11px Consolas,monospace;letter-spacing:2px}.pulse{width:7px;height:7px;background:#a78bfa;border-radius:50%;box-shadow:0 0 15px #a78bfa}h1{font-size:clamp(42px,6vw,64px);line-height:1.04;letter-spacing:-3px;margin:23px 0 18px}.lead{font-size:15px;line-height:1.8;color:var(--muted);max-width:720px}
-.notice{display:flex;gap:17px;align-items:flex-start;margin-top:25px;padding:23px;border:1px solid #fb718535;background:#fb71850a;border-radius:15px}.notice-icon{flex:0 0 30px;width:30px;height:30px;display:grid;place-items:center;border-radius:9px;background:#fb71851a;color:#fb7185;font-weight:900}.notice h2{font-size:16px;margin:0 0 10px}.notice p,.release p{font-size:13px;line-height:1.8;color:var(--muted);margin:0}
-.list{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px}.release{background:linear-gradient(145deg,#151421,#101019);border:1px solid var(--line);border-radius:16px;padding:25px}.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:23px}.file{display:grid;place-items:center;height:42px;min-width:42px;padding:0 8px;border:1px solid #a78bfa45;background:#a78bfa12;border-radius:12px;color:#c4b5fd;font:700 11px Consolas,monospace}.tag{font:700 10px Consolas,monospace;letter-spacing:1px;color:var(--muted)}.release h2{font-size:16px;margin:0 0 10px}.button{display:flex;align-items:center;justify-content:center;gap:12px;border-radius:12px;padding:13px 18px;text-decoration:none;font-size:13px;font-weight:800;margin-top:16px}.primary{background:linear-gradient(115deg,#a78bfa,#e879f9);color:#171021}.secondary{background:#ffffff08;border:1px solid var(--line);color:var(--text)}small{display:block;margin-top:13px;color:#77768d;font-size:11px;line-height:1.6}.back-wrap{margin-top:28px}footer{max-width:1120px;margin:0 auto;padding:24px 26px 30px;border-top:1px solid #ffffff0d;display:flex;justify-content:space-between;gap:12px;color:#66657a;font:10px Consolas,monospace}
-@media(max-width:700px){header{height:auto;min-height:72px;align-items:flex-start;gap:18px;flex-direction:column;padding:18px 22px}nav{gap:17px;flex-wrap:wrap}main{padding:55px 22px 44px}h1{letter-spacing:-2px}.list{grid-template-columns:1fr}.notice{padding:18px}footer{padding:22px;flex-direction:column}}
+:root {
+  color-scheme: dark;
+  --bg: #0d0915;
+  --card: #191126;
+  --line: #39264e;
+  --purple: #bd91ff;
+  --text: #f6f0ff;
+  --muted: #b9accb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(ellipse at top, #392052, transparent 55%),
+    var(--bg);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--purple);
+}
+
+.container {
+  width: min(850px, 92%);
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 22px 0;
+  border-bottom: 1px solid #ffffff18;
+}
+
+.logo {
+  color: white;
+  font-size: 23px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.logo span {
+  color: var(--purple);
+}
+
+nav {
+  display: flex;
+  gap: 18px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+}
+
+.hero {
+  padding: 42px 0 20px;
+}
+
+.hero h1 {
+  font-size: clamp(32px, 7vw, 52px);
+  line-height: 1.1;
+  margin: 8px 0;
+}
+
+.hero p,
+.muted {
+  color: var(--muted);
+}
+
+.panel {
+  background: #171020eF;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px;
+  margin: 18px 0;
+}
+
+.warning {
+  border-left: 4px solid #f3bd64;
+}
+
+.warning strong {
+  color: #ffd58b;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.heading h2 {
+  margin: 0;
+}
+
+#status {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.release {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 17px;
+  margin-top: 14px;
+  background: #100b19;
+}
+
+.release h3 {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.notes {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  margin: 15px 0;
+}
+
+.btn {
+  display: inline-block;
+  border: 1px solid #7954a4;
+  border-radius: 9px;
+  padding: 9px 13px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background: #332044;
+}
+
+footer {
+  padding: 24px 0 40px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media (max-width: 500px) {
+  header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
 </style>
 </head>
+
 <body>
-<div class="glow a"></div><div class="glow b"></div>
-<header><a class="brand" href="index.html"><span class="mark">K</span><span>KB<span class="accent">Virus</span></span></a><nav><a href="index.html">Trang chủ</a><a class="active" href="download.html">Download</a><a href="https://github.com/YOUR_USERNAME/YOUR_REPO" target="_blank" rel="noopener">GitHub ↗</a></nav></header>
-<main>
-<div class="eyebrow"><span class="pulse"></span> RELEASE CENTER</div>
-<h1>Tải <span class="accent">KBVirus</span></h1>
-<p class="lead">Chọn mục bên dưới để mở GitHub Releases hoặc repository. Thay YOUR_USERNAME/YOUR_REPO bằng thông tin GitHub thật của bạn.</p>
-<section class="notice"><div class="notice-icon">!</div><div><h2>Cảnh báo hiệu năng</h2><p>KBVirus được mô tả là có thể làm máy tính yếu bị lag hoặc treo. Không chạy trên máy chính hay máy của người khác. Ưu tiên đọc mã nguồn và chỉ thử trong máy ảo giới hạn CPU/RAM.</p></div></section>
-<section class="list">
-<article class="release"><div class="top"><span class="file">REL</span><span class="tag">GITHUB RELEASES</span></div><h2>Các bản phát hành</h2><p>Mở danh sách phiên bản và tải các asset đã được đăng trong GitHub Releases.</p><a class="button primary" href="https://github.com/YOUR_USERNAME/YOUR_REPO/releases" target="_blank" rel="noopener">Mở Releases ↗</a><small>Liên kết sẽ hoạt động sau khi thay URL mẫu bằng repository thật.</small></article>
-<article class="release"><div class="top"><span class="file">GH</span><span class="tag">SOURCE CODE</span></div><h2>Mã nguồn trên GitHub</h2><p>Xem README, source code, lịch sử commit và ghi chú phát hành trước khi thử nghiệm.</p><a class="button secondary" href="https://github.com/YOUR_USERNAME/YOUR_REPO" target="_blank" rel="noopener">Mở repository ↗</a></article>
-</section>
-<div class="back-wrap"><a class="back" href="index.html">← Quay lại trang chủ</a></div>
+<header class="container">
+  <a class="logo" href="index.html">
+    KB<span>VIRUS</span>
+  </a>
+
+  <nav>
+    <a href="index.html">Trang chủ</a>
+    <a href="https://github.com/kangbao15/kbvirus"
+       target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <p style="color:var(--purple);font-weight:800">
+      GITHUB RELEASES
+    </p>
+    <h1>Downloads</h1>
+    <p>
+      Danh sách các phiên bản được lấy trực tiếp từ repository
+      kangbao15/kbvirus. Có release mới thì danh sách sẽ tự cập nhật.
+    </p>
+  </section>
+
+  <section class="panel warning">
+    <strong>⚠ Lưu ý</strong>
+    <p class="muted">
+      KBVirus có thể khiến máy tính hoạt động không ổn định.
+      Đừng chạy trên máy chính hoặc máy của người khác.
+    </p>
+  </section>
+
+  <section class="panel">
+    <div class="heading">
+      <h2>Các phiên bản</h2>
+      <span id="status">Đang tải...</span>
+    </div>
+
+    <div id="releases"></div>
+
+    <p class="muted">
+      Nguồn:
+      <a href="https://github.com/kangbao15/kbvirus/releases"
+         target="_blank" rel="noopener noreferrer">
+        GitHub Releases
+      </a>
+    </p>
+  </section>
 </main>
-<footer><span>© KangBao15 · KBVirus</span><span>Experimental project · Use responsibly</span></footer>
+
+<footer class="container">
+  KBVirus · Powered by GitHub API
+</footer>
+
 <script>
-document.querySelectorAll('a[target="_blank"]').forEach(a=>a.addEventListener('click',()=>{a.blur()}));
+const API =
+  "https://api.github.com/repos/kangbao15/kbvirus/releases?per_page=100";
+
+const list = document.getElementById("releases");
+const status = document.getElementById("status");
+
+function makeElement(tag, className, content) {
+  const element = document.createElement(tag);
+
+  if (className) element.className = className;
+  if (content !== undefined) element.textContent = content;
+
+  return element;
+}
+
+function formatDate(date) {
+  if (!date) return "Chưa có ngày phát hành";
+
+  const parsed = new Date(date);
+
+  if (Number.isNaN(parsed.getTime())) {
+    return "Chưa có ngày phát hành";
+  }
+
+  return new Intl.DateTimeFormat("vi-VN", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric"
+  }).format(parsed);
+}
+
+async function loadReleases() {
+  try {
+    const response = await fetch(API, {
+      headers: {
+        Accept: "application/vnd.github+json"
+      }
+    });
+
+    if (!response.ok) {
+      throw new Error("GitHub API error: " + response.status);
+    }
+
+    const releases = await response.json();
+    list.replaceChildren();
+
+    if (!releases.length) {
+      list.append(
+        makeElement(
+          "p",
+          "muted",
+          "Repository hiện chưa có release công khai."
+        )
+      );
+
+      status.textContent = "0 phiên bản";
+      return;
+    }
+
+    for (const release of releases) {
+      const card = makeElement("article", "release");
+
+      const title = makeElement(
+        "h3",
+        "",
+        release.name || release.tag_name || "Release"
+      );
+
+      const meta = makeElement(
+        "div",
+        "meta",
+        `${release.tag_name || "No tag"} · ${formatDate(
+          release.published_at
+        )}`
+      );
+
+      const notes = makeElement(
+        "div",
+        "notes",
+        release.body || "Release này chưa có ghi chú cập nhật."
+      );
+
+      card.append(title, meta, notes);
+
+      const link = document.createElement("a");
+      link.className = "btn";
+      link.href = release.html_url;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      link.textContent = "Xem release ↗";
+
+      card.append(link);
+      list.append(card);
+    }
+
+    status.textContent = `${releases.length} phiên bản`;
+  } catch (error) {
+    list.replaceChildren();
+
+    list.append(
+      makeElement(
+        "p",
+        "muted",
+        "Không tải được danh sách. Có thể mạng bị lỗi hoặc GitHub API đang giới hạn truy cập."
+      )
+    );
+
+    const link = document.createElement("a");
+    link.href = "https://github.com/kangbao15/kbvirus/releases";
+    link.textContent = "Mở GitHub Releases ↗";
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+
+    list.append(link);
+    status.textContent = "Tải thất bại";
+  }
+}
+
+loadReleases();
 </script>
 </body>
 </html>
