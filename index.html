@@ -1,1 +1,56 @@
-
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0b12">
+<title>KBVirus | Trang chủ</title>
+<style>
+:root{--bg:#0b0b12;--panel:#151421;--text:#f4f3ff;--muted:#a3a2b8;--purple:#a78bfa;--pink:#e879f9;--line:#29283a;--red:#fb7185}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif;min-height:100vh;overflow-x:hidden}
+.glow{position:fixed;width:420px;height:420px;border-radius:50%;filter:blur(110px);opacity:.16;pointer-events:none;z-index:-1}.glow.a{background:#7c3aed;top:-170px;left:-120px}.glow.b{background:#db2777;right:-180px;top:340px}
+header{height:78px;max-width:1120px;margin:auto;padding:0 26px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff0d}
+.brand{display:flex;gap:10px;align-items:center;text-decoration:none;color:var(--text);font-weight:900;font-size:20px;letter-spacing:-.7px}.mark{display:grid;place-items:center;width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,#a78bfa,#ec4899);color:#100d1b}
+.accent{color:var(--purple)}nav{display:flex;gap:24px}nav a{color:var(--muted);text-decoration:none;font-size:13px;font-weight:700}nav a:hover,nav a.active{color:white}
+main{max-width:1068px;margin:auto;padding:82px 26px 60px}.eyebrow{display:flex;align-items:center;gap:10px;color:#c4b5fd;font:700 11px Consolas,monospace;letter-spacing:2px}.pulse{width:7px;height:7px;background:#a78bfa;border-radius:50%;box-shadow:0 0 15px #a78bfa}
+h1{font-size:clamp(44px,7vw,76px);line-height:1.04;letter-spacing:-4px;margin:23px 0 20px;font-weight:900}.muted{color:#77768d}.lead{font-size:16px;line-height:1.8;color:var(--muted);max-width:650px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin:30px 0 44px}.button{display:inline-flex;align-items:center;justify-content:center;gap:12px;border-radius:12px;padding:13px 18px;text-decoration:none;font-size:13px;font-weight:800;transition:transform .2s}.button:hover{transform:translateY(-2px)}.primary{background:linear-gradient(115deg,#a78bfa,#e879f9);color:#171021}.secondary{background:#ffffff08;border:1px solid var(--line);color:var(--text)}
+.terminal{max-width:680px;border:1px solid #38344e;background:#0e0d17;border-radius:16px;overflow:hidden;box-shadow:0 20px 70px #0005}.terminal-head{height:42px;display:flex;align-items:center;gap:7px;padding:0 15px;background:#171522;border-bottom:1px solid #ffffff0b}.dot{width:8px;height:8px;border-radius:50%;background:#5d5871}.dot.red{background:#fb7185}.dot.yellow{background:#fbbf24}.dot.green{background:#34d399}.terminal-head label{margin:auto;font:11px Consolas,monospace;color:#77758b;padding-right:32px}.terminal-body{padding:15px 20px 19px;font:12px/1.9 Consolas,monospace;color:#b8b5ca}.prompt{color:#c4b5fd}.warn{color:#fb7185}.cursor{display:inline-block;width:7px;height:13px;background:#c4b5fd;vertical-align:middle;animation:blink 1s steps(2) infinite}@keyframes blink{50%{opacity:0}}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:80px}.card{background:linear-gradient(145deg,#151421,#101019);border:1px solid var(--line);border-radius:16px;padding:24px}.icon{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:#a78bfa18;color:#c4b5fd;font-size:23px;margin-bottom:20px}.card h2,.notice h2{font-size:16px;margin:0 0 10px}.card p,.notice p{font-size:13px;line-height:1.8;color:var(--muted);margin:0}
+.notice{display:flex;gap:17px;align-items:flex-start;margin-top:22px;padding:23px;border:1px solid #a78bfa35;background:#a78bfa0a;border-radius:15px}.notice-icon{flex:0 0 30px;width:30px;height:30px;display:grid;place-items:center;border-radius:9px;background:#a78bfa20;color:#c4b5fd;font-weight:900}
+footer{max-width:1120px;margin:0 auto;padding:24px 26px 30px;border-top:1px solid #ffffff0d;display:flex;justify-content:space-between;gap:12px;color:#66657a;font:10px Consolas,monospace}
+@media(max-width:700px){header{height:auto;min-height:72px;align-items:flex-start;gap:18px;flex-direction:column;padding:18px 22px}nav{gap:17px;flex-wrap:wrap}main{padding:58px 22px 44px}h1{letter-spacing:-2.5px}.cards{grid-template-columns:1fr;margin-top:55px}.notice{padding:18px}.terminal-body{font-size:10px}footer{padding:22px;flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="glow a"></div><div class="glow b"></div>
+<header>
+<a class="brand" href="index.html"><span class="mark">K</span><span>KB<span class="accent">Virus</span></span></a>
+<nav><a class="active" href="index.html">Trang chủ</a><a href="download.html">Download</a><a href="https://github.com/YOUR_USERNAME/YOUR_REPO" target="_blank" rel="noopener">GitHub ↗</a></nav>
+</header>
+<main>
+<section class="hero">
+<div class="eyebrow"><span class="pulse"></span> PROJECT PAGE · KANGBAO15</div>
+<h1>KB<span class="accent">Virus</span><br><span class="muted">Không phải trò đùa.</span></h1>
+<p class="lead">Một dự án thử nghiệm hiệu năng máy tính do KangBao15 thực hiện. Tìm hiểu kỹ trước khi chạy bất kỳ bản build nào.</p>
+<div class="actions"><a class="button primary" href="download.html">Xem bản phát hành <span>↗</span></a><a class="button secondary" href="https://github.com/YOUR_USERNAME/YOUR_REPO" target="_blank" rel="noopener">Mở GitHub</a></div>
+<div class="terminal"><div class="terminal-head"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span><label>kbvirus.exe</label></div><div class="terminal-body">
+<p><span class="prompt">KB&gt;</span> Project status: <b class="warn">EXPERIMENTAL</b></p>
+<p><span class="prompt">KB&gt;</span> System impact: <b>HIGH RESOURCE USAGE</b></p>
+<p><span class="prompt">KB&gt;</span> Run only in a controlled test environment.</p>
+<p><span class="prompt">KB&gt;</span> <span class="cursor"></span></p>
+</div></div>
+</section>
+<section class="cards">
+<article class="card"><div class="icon">⌁</div><h2>Giới thiệu</h2><p>KBVirus là chương trình thử nghiệm có thể sử dụng nhiều tài nguyên hệ thống, khiến máy chậm hoặc không phản hồi.</p></article>
+<article class="card"><div class="icon">⚠</div><h2>Cảnh báo</h2><p>Không chạy trên máy đang sử dụng, máy người khác hoặc thiết bị có dữ liệu quan trọng. Không có gì đảm bảo máy sẽ luôn an toàn.</p></article>
+<article class="card"><div class="icon">⌘</div><h2>Mã nguồn</h2><p>Xem mã nguồn, lịch sử thay đổi và thông tin phát hành trên GitHub trước khi quyết định có nên thử nghiệm hay không.</p></article>
+</section>
+<section class="notice"><div class="notice-icon">!</div><div><h2>Đọc trước khi tải</h2><p>Đây không phải phần mềm chống virus. Các bản thử nghiệm có thể gây giật, treo hoặc làm mất dữ liệu chưa lưu. Chỉ thử nghiệm trong máy ảo có snapshot và giới hạn tài nguyên.</p></div></section>
+</main>
+<footer><span>© KangBao15 · KBVirus</span><span>Experimental project · Use responsibly</span></footer>
+<script>
+document.querySelectorAll('a[href="download.html"]').forEach(link=>link.addEventListener('click',()=>{document.body.dataset.leaving='true'}));
+</script>
+</body>
+</html>
